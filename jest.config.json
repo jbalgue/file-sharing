@@ -1,3 +1,6 @@
 {
-  "testRegex": "((\\.|/*.)(spec))\\.js?$"
+  "testRegex": "((\\.|/*.)(spec|integration))\\.js?$",
+  "testEnvironment": "node",
+  "setupFilesAfterEnv": ["./setupTests.js"],
+  "verbose": true
 }
