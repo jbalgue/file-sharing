@@ -1,0 +1,38 @@
+{
+  "name": "file-sharing",
+  "version": "1.0.0",
+  "description": "Node.js backend code test",
+  "author": "Jul Balgue",
+  "main": "src/index.js",
+  "private": true,
+  "keywords": [
+    "nodejs",
+    "test"
+  ],
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "test": "jest --config ./jest.config.json"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.2.2",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.16",
+    "dotenv": "^8.2.0",
+    "node-cron": "^2.0.3",
+    "restify": "^8.5.1",
+    "restify-errors": "^8.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
